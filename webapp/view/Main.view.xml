@@ -9,20 +9,22 @@
 
 	<fiori:Page>
 		<fiori:content>
-			<Button text="{i18n>createSupplier}" click="openDialog"/>
-			<Dialog id="helloDialog" resizable="true" draggable="true" headerText="Register Form">
-				<m:FlexBox direction="Column" alignItems="Start">
-					<Label for="username" showColon="true" text="Username" />
-					<Input id="username" placeholder="Enter username" />
-					<Label for="password" showColon="true" text="Password" />
-					<Input id="password" type="Password" placeholder="Enter password" valueState="Error" />
-					<Label for="email" showColon="true" text="Email" />
-					<Input id="email" placeholder="Enter e-mail" />
-				</m:FlexBox>
-				<footer>
-					<Button design="Emphasized" click=".handleClose" text="Register" class="sapUiTinyMarginTop sapUiTinyMarginBottom" />
-				</footer>
-			</Dialog>
+			<m:FlexBox direction="Column" alignItems="Start">
+				<Dialog id="helloDialog" resizable="true" draggable="true" headerText="Register Form">
+					<m:FlexBox direction="Column" alignItems="Start">
+						<Label for="username" showColon="true" text="Username" />
+						<Input id="username" placeholder="Enter username" />
+						<Label for="password" showColon="true" text="Password" />
+						<Input id="password" type="Password" placeholder="Enter password" valueState="Error" />
+						<Label for="email" showColon="true" text="Email" />
+						<Input id="email" placeholder="Enter e-mail" />
+					</m:FlexBox>
+					<footer>
+						<Button design="Emphasized" click=".handleClose" text="Register" class="sapUiTinyMarginTop sapUiTinyMarginBottom" />
+					</footer>
+				</Dialog>
+				<Button text="{i18n>registerUser}" click="openDialog"/>
+			</m:FlexBox>
 		</fiori:content>
 	</fiori:Page>
 </mvc:View>

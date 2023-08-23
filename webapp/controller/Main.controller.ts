@@ -9,4 +9,9 @@ export default class Main extends BaseController {
 		const dialog = this.getView().byId("helloDialog") as Dialog;
 		dialog.show(true);
 	}
+
+	public handleClose(): void {
+		const dialog = this.getView().byId("helloDialog") as Dialog;
+		dialog.close();
+	}
 }
