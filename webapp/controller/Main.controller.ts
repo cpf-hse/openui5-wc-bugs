@@ -1,11 +1,12 @@
-import MessageBox from "sap/m/MessageBox";
+import Dialog from "sap/ui/webc/main/Dialog";
 import BaseController from "./BaseController";
 
 /**
  * @namespace com.myorg.myapp.controller
  */
 export default class Main extends BaseController {
-	public sayHello(): void {
-		MessageBox.show("Hello World!");
+	public openDialog(): void {
+		const dialog = this.getView().byId("helloDialog") as Dialog;
+		dialog.show(true);
 	}
 }

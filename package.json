@@ -21,6 +21,7 @@
 	},
 	"devDependencies": {
 		"@openui5/types": "1.117.0",
+		"@types/qunit": "^2.19.6",
 		"@typescript-eslint/eslint-plugin": "^6.4.1",
 		"@typescript-eslint/parser": "^6.4.1",
 		"@ui5/cli": "^3.5.0",
